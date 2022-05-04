@@ -45,7 +45,7 @@
 
 ### 4.1 主要技术栈
 
-python 3.7、pandas、pyecharts、selenium
+python 3.7、pandas、pyecharts、selenium、simple-czsc
 
 PS：建议使用Anaconda管理开发环境，[清华镜像站下载](https://mirrors.tuna.tsinghua.edu.cn/)。
 
