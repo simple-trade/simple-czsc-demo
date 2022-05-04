@@ -1,0 +1,10 @@
+output/
+.DS_Store
+*/.DS_Store
+**/__pycache__
+.ipynb_checkpoints
+bin/lab.pid
+bin/simple.log
+*.pyc
+**/*.pyc
+gmcache/

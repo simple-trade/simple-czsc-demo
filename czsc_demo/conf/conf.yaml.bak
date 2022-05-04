@@ -1,0 +1,48 @@
+debug: False
+
+path.output.logs: "output/logs/"
+path.output.html: "output/html/"
+path.output.excels: "output/excels/"
+path.output.pics: "output/pics/"
+
+# chromedriver路径
+path.chromedriver: "<path of chromedriver>"
+# serverj地址（微信消息推送）
+url.serverj: "<url of serverj>"
+
+
+myquant:
+  token: <myquant's token>
+  serv_addr: "<myquant's ip:rpcPort>"
+  strategy_demo:
+    mode: 2 # 2：回测模式，1：实时模式
+    market: 2 # 1: 股票 2：期货  需与symbols对应
+    symbols: # 掘金标的代码
+      - CFFEX.IF
+    volume: 1 # 下单手数/股数
+    backtest_slippage: 2 # 滑点跳数
+    backtest_account_id: ""
+    strategy_id: <strategy_id>
+    frequency: 900s
+    backtest_start_time: "2020-01-01 09:00:00"
+    backtest_end_time: "2021-01-01 15:00:00"
+    backtest_transaction_ratio: 0.95 # 成交比例
+    backtest_initial_cash: 5000000 #回测初始资金
+    backtest_slippage_ratio: 0 # 回测滑点比例？？？
+    backtest_commission_ratio: 0.0001 # 回测佣金比例      
+  stock_selector:
+    mode: 2 # 2：回测模式，1：实时模式
+    market: 1 # 1: 股票 2：期货  需与symbols对应
+    symbols:
+      - SHFE.rb
+    volume: 1 # 下单手数/股数
+    backtest_slippage: 2 # 滑点跳数
+    backtest_account_id: ""
+    strategy_id: <strategy_id>
+    frequency: 1d
+    backtest_start_time: "2020-07-01 09:00:00"
+    backtest_end_time: "2020-07-01 15:00:00"
+    backtest_transaction_ratio: 0.95 # 成交比例
+    backtest_initial_cash: 50000 #回测初始资金
+    backtest_slippage_ratio: 0 # 回测滑点比例？？？
+    backtest_commission_ratio: 0.0001 # 回测佣金比例
